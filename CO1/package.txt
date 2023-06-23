@@ -1,0 +1,23 @@
+import graphics.Rect;
+public class Main{
+        public static void main(String [] args){
+        Rect r1 = new Rect();
+        r1.area();
+}
+}
+
+package graphics;
+import java.util.Scanner;
+public class Rect{
+        int a,l,b;
+        public void area(){
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter length");
+                l = sc.nextInt();
+                System.out.println("Enter breadth");
+                b = sc.nextInt();
+                a = l*b;
+                System.out.println("Area is:"+a);
+
+                }
+}
